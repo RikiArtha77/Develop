@@ -11,7 +11,7 @@ class packages extends Model
     public $primaryKey='package_id';
     protected $table="package";
     protected $fillable = [
-        'package_name','package_priice','package_desk'
+        'package_code','komunitas_id','package_name','package_priice','package_desk','gambar'
     ];
     public function komunitas(){
         return $this->belongsTo(komunitas::class,'komunitas_id','komunitas_id');
